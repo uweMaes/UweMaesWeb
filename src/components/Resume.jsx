@@ -7,8 +7,6 @@ import {
   VStack,
   useColorModeValue,
   Flex,
-  HStack,
-  Divider,
 } from "@chakra-ui/react";
 import Beispielbild1 from "../assets/images/Bild1.jpg"; // Pfad zu deinem Beispielbild
 import Beispielbild2 from "../assets/images/Bild2.jpeg"; // Pfad zu einem weiteren Beispielbild
