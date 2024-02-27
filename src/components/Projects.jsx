@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Box, Text, Button, VStack, Collapse } from "@chakra-ui/react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import KFZ_Verwaltung from "./projects/KFZVerwaltung";
+import KFZVerwaltung from "./projects/KFZVerwaltung";
 import ReactWebseiteProjekt from "./projects/ReactWebseiteProjekt";
 
 const projects = [
   {
     id: 0,
     name: "KFZ Verwaltung mit Python und SQLite3",
-    content: <KFZ_Verwaltung />,
+    content: <KFZVerwaltung />,
     isCustomComponent: true,
   },
   {
