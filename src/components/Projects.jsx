@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Text, Button, VStack, Collapse } from "@chakra-ui/react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
-import KFZ_Verwaltung from "./projects/KFZ_Verwaltung";
+import KFZ_Verwaltung from "./projects/KFZVerwaltung";
 import ReactWebseiteProjekt from "./projects/ReactWebseiteProjekt";
 
 const projects = [

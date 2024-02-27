@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Image, Link, Text } from "@chakra-ui/react";
+import routing from "../../assets/project_images/meineWebseite/ScreenshotAppRouting.png";
 
 function ReactWebseiteProjekt() {
   return (
@@ -40,6 +41,14 @@ function ReactWebseiteProjekt() {
         Geräten sorgt.
       </Text>
       {/* Empfohlener Screenshot: Responsive Design oder dynamische Interaktionen */}
+      <Image
+        borderRadius="full"
+        boxSize="150px"
+        src={routing}
+        alt="Routing"
+        mb={5}
+        objectFit="cover"
+      />
 
       {/* GitHub-Link */}
       <Text mb={2}>Das Projekt auf GitHub:</Text>

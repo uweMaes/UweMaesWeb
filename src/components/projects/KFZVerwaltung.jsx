@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Image, Link, Text } from "@chakra-ui/react";
 import UMLImage from "../../assets/project_images/kfz_verwaltung/UML.png";
 
-function KFZ_Verwaltung() {
+function KFZVerwaltung() {
   return (
     <Box p={5} shadow="md" borderWidth="1px" borderRadius="md" width="100%">
       <Text fontSize="xl" mb={4}>
@@ -69,4 +69,4 @@ function KFZ_Verwaltung() {
   );
 }
 
-export default KFZ_Verwaltung;
+export default KFZVerwaltung;
