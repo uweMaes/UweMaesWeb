@@ -15,7 +15,7 @@ const Resume = () => {
   const cardBg = useColorModeValue("white", "gray.700");
   const shadow = useColorModeValue("md", "dark-lg");
   return (
-    <Box p={5}>
+    <Box p={10}>
       <Heading as="h1" size="xl" mb={5}>
         Lebenslauf
       </Heading>
@@ -36,7 +36,8 @@ const Resume = () => {
               06/2022
             </Text>
             <Text>
-              <strong>Kompanieeinsatzoffizier</strong> - 4./Jägerbataillon 91
+              <strong>Kompanieeinsatzoffizier</strong> - 4./Jägerbataillon 91,
+              10/2017 - 05/2019
             </Text>
             <Text>
               <strong>Kompanieeinsatzoffizier</strong> - 2./Jägerbataillon 291,

@@ -8,10 +8,10 @@ import {
   Flex,
   VStack,
   useColorModeValue,
-  Link,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import file from "../assets/images/file(64).jpeg";
+import { Link as RouterLink } from "react-router-dom";
 
 const About = () => {
   const cardBg = useColorModeValue("white", "gray.700");
@@ -34,12 +34,16 @@ const About = () => {
         />
 
         <Text fontSize="lg" mb={5}>
-          Nach 13 Jahren Dienst als Hauptmann in der Bundeswehr, wo ich in
-          Bereichen wie Planung und Organisation, Führung von über 100 Soldaten
-          im In- und Ausland, sowie Forschung und Weiterentwicklung im
-          IT-Bereich des Heeres tätig war, habe ich mich entschieden, meine
-          Karriere in der IT-Branche fortzusetzen. Derzeit vertiefe ich mein
-          Wissen durch ein Informatikstudium mit dem Schwerpunkt auf
+          13 Jahre lang habe ich als Zeitsoldat in der Bundeswehr gedient,
+          zuletzt im Dinestgrad eines Hauptmanns. Als Offizier umfassten meine
+          Aufgaben Bereiche wie Planung und Organisation von Ausbildungen und
+          Übungen und die Unterstützung des Vorgesetzten bei der Führung und
+          Erziehung der Soldaten. Ebenso war ich selbst für Führung von über 100
+          Soldaten im In- und Ausland verantwortlich. In meiner letzten
+          Verwendung war ich in der Forschung und Weiterentwicklung des Heeres
+          im Bereich Digitalisierung eingesetzt. Dort habe ich mich entschieden,
+          meine Karriere in der IT-Branche fortzusetzen. Derzeit vertiefe ich
+          mein Wissen durch ein Informatikstudium mit dem Schwerpunkt auf
           Softwareentwicklung.
         </Text>
       </Box>
@@ -96,8 +100,8 @@ const About = () => {
             variant="solid"
             ml={4}
             minW="120px"
-            as={Link}
-            href="#kontakt"
+            as={RouterLink}
+            to="/Contact"
           >
             Kontakt
           </Button>
