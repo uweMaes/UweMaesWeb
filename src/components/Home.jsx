@@ -27,9 +27,9 @@ const Home = () => {
             Willkommen auf meiner Seite!
           </Heading>
           <Text fontSize="lg" mb={4}>
-            Mein Name ist UweMaes, und ich bin Quereinsteiger in der IT-Branche.
-            Diese Seite gibt Einblicke in meine beruflichen Fähigkeiten,
-            Projekte und Interessen.
+            Mein Name ist Uwe Maes, und ich bin Quereinsteiger in der
+            IT-Branche. Diese Seite gibt Einblicke in meine beruflichen
+            Fähigkeiten, Projekte und Interessen.
           </Text>
           <Button colorScheme="teal" as={RouterLink} to="/about">
             Mehr über mich

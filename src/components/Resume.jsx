@@ -73,6 +73,15 @@ const Resume = () => {
               der Bundeswehr, Seit 07/2022
             </Text>
             <Text>
+              <strong>Flugsicherheitsoffizier Grundlehrgang</strong> - General
+              Flugsicherheit der Bundeswehr, 12/2018
+            </Text>
+            <Text>
+              <strong>Einzelkämpferlehrgang</strong> - Infanterieschule des
+              Heeres, 05/2015
+            </Text>
+            <Text></Text>
+            <Text>
               <strong>Übungsleiter Bundeswehr</strong> - Sportschule der
               Bundeswehr, 01/2015
             </Text>

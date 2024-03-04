@@ -17,68 +17,40 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
 
+// Link-Konfiguration für die Wiederverwendung
+const links = [
+  { to: "/", text: "Home" },
+  { to: "/about", text: "Über mich" },
+  { to: "/resume", text: "Lebenslauf" },
+  { to: "/projects", text: "Projekte" },
+  { to: "/contact", text: "Kontakt" },
+];
+
+// Wiederverwendbare Link-Komponente
+const NavLink = ({ to, text }) => (
+  <Box display={["none", "none", "block", "block"]} p="2">
+    <ChakraLink
+      as={Link}
+      to={to}
+      _hover={{ textDecoration: "none", color: "yellow.400" }}
+    >
+      <Text>{text}</Text>
+    </ChakraLink>
+  </Box>
+);
+
 const Navigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <Flex bg="teal.500" color="white" justifyContent="space-between" p={4}>
-      <Box display={["none", "none", "block", "block"]} p="2">
-        <ChakraLink
-          as={Link}
-          to="/"
-          _hover={{ textDecoration: "none", color: "yellow.400" }}
-        >
-          <Text>Home</Text>
-        </ChakraLink>
-      </Box>
-      <Box display={["none", "none", "block", "block"]} p="2">
-        <ChakraLink
-          as={Link}
-          to="/about"
-          _hover={{
-            textDecoration: "none", // Entfernt die Unterstreichung beim Hovern
-            color: "yellow.400",
-          }}
-        >
-          <Text>Über mich</Text>
-        </ChakraLink>
-      </Box>
-      <Box display={["none", "none", "block", "block"]} p="2">
-        <ChakraLink
-          as={Link}
-          to="/resume"
-          _hover={{
-            textDecoration: "none", // Entfernt die Unterstreichung beim Hovern
-            color: "yellow.400",
-          }}
-        >
-          <Text>Lebenslauf</Text>
-        </ChakraLink>
-      </Box>
-      <Box display={["none", "none", "block", "block"]} p="2">
-        <ChakraLink
-          as={Link}
-          to="/projects"
-          _hover={{
-            textDecoration: "none", // Entfernt die Unterstreichung beim Hovern
-            color: "yellow.400",
-          }}
-        >
-          <Text>Projekte</Text>
-        </ChakraLink>
-      </Box>
-      <Box display={["none", "none", "block", "block"]} p="2">
-        <ChakraLink
-          as={Link}
-          to="/contact"
-          _hover={{
-            textDecoration: "none", // Entfernt die Unterstreichung beim Hovern
-            color: "yellow.400",
-          }}
-        >
-          <Text>Kontakt</Text>
-        </ChakraLink>
-      </Box>
+      {links.map((link) => (
+        <NavLink
+          key={link.to}
+          {...link}
+          display={["none", "none", "block", "block"]}
+        />
+      ))}
       <IconButton
         aria-label="Open Menu"
         size="lg"
@@ -94,46 +66,17 @@ const Navigation = () => {
           <DrawerHeader>Navigationsmenü</DrawerHeader>
           <DrawerBody>
             <VStack spacing={4}>
-              <ChakraLink
-                as={Link}
-                to="/"
-                onClick={onClose}
-                _hover={{ textDecoration: "none" }}
-              >
-                <Text fontSize="lg">Home</Text>
-              </ChakraLink>
-              <ChakraLink
-                as={Link}
-                to="/about"
-                onClick={onClose}
-                _hover={{ textDecoration: "none" }}
-              >
-                <Text fontSize="lg">Über mich</Text>
-              </ChakraLink>
-              <ChakraLink
-                as={Link}
-                to="/resume"
-                onClick={onClose}
-                _hover={{ textDecoration: "none" }}
-              >
-                <Text fontSize="lg">Lebenslauf</Text>
-              </ChakraLink>
-              <ChakraLink
-                as={Link}
-                to="/projects"
-                onClick={onClose}
-                _hover={{ textDecoration: "none" }}
-              >
-                <Text fontSize="lg">Projekte</Text>
-              </ChakraLink>
-              <ChakraLink
-                as={Link}
-                to="/contact"
-                onClick={onClose}
-                _hover={{ textDecoration: "none" }}
-              >
-                <Text fontSize="lg">Kontakt</Text>
-              </ChakraLink>
+              {links.map((link) => (
+                <ChakraLink
+                  key={link.to}
+                  as={Link}
+                  to={link.to}
+                  onClick={onClose}
+                  _hover={{ textDecoration: "none" }}
+                >
+                  <Text fontSize="lg">{link.text}</Text>
+                </ChakraLink>
+              ))}
             </VStack>
           </DrawerBody>
         </DrawerContent>
