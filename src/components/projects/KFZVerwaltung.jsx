@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Image, Link, Text } from "@chakra-ui/react";
 
 function KFZVerwaltung() {
-  const umlDiagrammUrl = `${process.env.PUBLIC_URL}/assets/project_images/kfz_verwaltung/UML.png`;
+  const umlDiagrammUrl = `${process.env.PUBLIC_URL}/assets/project_images/kfzVerwaltung/UML.png`;
   return (
     <Box p={5} shadow="md" borderWidth="1px" borderRadius="md" width="100%">
       <Text fontSize="xl" mb={4}>

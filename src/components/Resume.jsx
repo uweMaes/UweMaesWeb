@@ -13,7 +13,7 @@ const Resume = () => {
   const cardBg = useColorModeValue("white", "gray.700");
   const shadow = useColorModeValue("md", "dark-lg");
   const bild1Url = `${process.env.PUBLIC_URL}/assets/images/Bild1.jpg`;
-  const bild2Url = `${process.env.PUBLIC_URL}/assets/images/Bild2.jpg`;
+  const bild2Url = `${process.env.PUBLIC_URL}/assets/images/Bild2.jpeg`;
   return (
     <Box p={10}>
       <Heading as="h1" size="xl" mb={5}>
