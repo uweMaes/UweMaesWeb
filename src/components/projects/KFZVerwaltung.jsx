@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Image, Link, Text } from "@chakra-ui/react";
-import UMLImage from "../../assets/project_images/kfz_verwaltung/UML.png";
 
 function KFZVerwaltung() {
+  const umlDiagrammUrl = `${process.env.PUBLIC_URL}/assets/project_images/kfz_verwaltung/UML.png`;
   return (
     <Box p={5} shadow="md" borderWidth="1px" borderRadius="md" width="100%">
       <Text fontSize="xl" mb={4}>
@@ -24,7 +24,7 @@ function KFZVerwaltung() {
       {/* UML-Diagramm */}
       <Text mb={2}>Architekturdiagramm:</Text>
       <Image
-        src={UMLImage}
+        src={umlDiagrammUrl}
         alt="UML Diagramm der KFZ Verwaltungsanwendung"
         mb={4}
       />

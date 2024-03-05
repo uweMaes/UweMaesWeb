@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Image, Link, Text } from "@chakra-ui/react";
-import routing from "../../assets/project_images/meineWebseite/ScreenshotAppRouting.png";
 
 function ReactWebseiteProjekt() {
+  const scrennshotUweMaesWebUrl = `${process.env.PUBLIC_URL}/assets/project_images/meineWebseite/ScreenshotAppRouting.png`;
   return (
     <Box p={5} shadow="md" borderWidth="1px" borderRadius="md" width="100%">
       <Text fontSize="xl" mb={4}>
@@ -44,7 +44,7 @@ function ReactWebseiteProjekt() {
       <Image
         borderRadius="full"
         boxSize="150px"
-        src={routing}
+        src={scrennshotUweMaesWebUrl}
         alt="Routing"
         mb={5}
         objectFit="cover"

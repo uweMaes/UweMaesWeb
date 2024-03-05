@@ -6,6 +6,7 @@ import {
   Button,
   Flex,
   useColorModeValue,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 
@@ -39,7 +40,7 @@ const Home = () => {
 
       <Box textAlign="center">
         <Heading as="h2" size="lg" mb={4}>
-          Was du hier finden kannst:
+          Was Sie hier finden können:
         </Heading>
         <Text fontSize="lg">
           Einen detaillierten Einblick in meine <strong>Berufserfahrung</strong>{" "}
@@ -53,6 +54,22 @@ const Home = () => {
           Meine persönlichen <strong>Interessen</strong> und{" "}
           <strong>Hobbys</strong>.
         </Text>
+      </Box>
+      <Box textAlign="center" mt={10}>
+        <Heading as="h3" size="md" mb={4}>
+          Ihnen gefällt, was Sie sehen?
+        </Heading>
+        <Text fontSize="lg" mb={4}>
+          Laden Sie hier meine Bewerbung herunter und leiten Sie sie weiter an
+          Ihre Personalabteilung.
+        </Text>
+        <ChakraLink
+          as="a"
+          href={`${process.env.PUBLIC_URL}/assets/pdfs/Bewerbung Uwe Maes.pdf`}
+          download="Bewerbung Uwe Maes.pdf"
+        >
+          <Button colorScheme="teal">Bewerbung herunterladen</Button>
+        </ChakraLink>
       </Box>
     </Box>
   );

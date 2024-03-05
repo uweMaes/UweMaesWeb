@@ -10,12 +10,13 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
-import file from "../assets/images/file(64).jpeg";
+
 import { Link as RouterLink } from "react-router-dom";
 
 const About = () => {
   const cardBg = useColorModeValue("white", "gray.700");
   const shadow = useColorModeValue("md", "dark-lg");
+  const bildUrl = `${process.env.PUBLIC_URL}/assets/images/file(64).jpeg`;
 
   return (
     <VStack spacing={5} p={5}>
@@ -27,8 +28,8 @@ const About = () => {
         <Image
           borderRadius="full"
           boxSize="150px"
-          src={file}
-          alt="Dein Name"
+          src={bildUrl}
+          alt="Ich im Anzug"
           mb={5}
           objectFit="cover"
         />

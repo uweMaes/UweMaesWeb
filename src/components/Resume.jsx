@@ -8,12 +8,12 @@ import {
   useColorModeValue,
   Flex,
 } from "@chakra-ui/react";
-import Beispielbild1 from "../assets/images/Bild1.jpg"; // Pfad zu deinem Beispielbild
-import Beispielbild2 from "../assets/images/Bild2.jpeg"; // Pfad zu einem weiteren Beispielbild
 
 const Resume = () => {
   const cardBg = useColorModeValue("white", "gray.700");
   const shadow = useColorModeValue("md", "dark-lg");
+  const bild1Url = `${process.env.PUBLIC_URL}/assets/images/Bild1.jpg`;
+  const bild2Url = `${process.env.PUBLIC_URL}/assets/images/Bild2.jpg`;
   return (
     <Box p={10}>
       <Heading as="h1" size="xl" mb={5}>
@@ -45,10 +45,9 @@ const Resume = () => {
             </Text>
           </Box>
 
-          {/* Beispielbild 1 zwischen den Abschnitten */}
           <Image
-            src={Beispielbild1}
-            alt="Beispielbild 1"
+            src={bild1Url}
+            alt="Lt Maes als Ehrenzugführer bei JgBtl 291"
             borderRadius="lg"
             boxSize="200px"
             mb={5}
@@ -115,10 +114,9 @@ const Resume = () => {
             </Text>
           </Box>
 
-          {/* Beispielbild 2 zwischen den Abschnitten */}
           <Image
-            src={Beispielbild2}
-            alt="Beispielbild 2"
+            src={bild2Url}
+            alt="Lt Maes im GTK Boxer"
             borderRadius="lg"
             boxSize="250px"
             mb={5}
