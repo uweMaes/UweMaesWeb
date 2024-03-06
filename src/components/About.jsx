@@ -36,7 +36,7 @@ const About = () => {
 
         <Text fontSize="lg" mb={5}>
           13 Jahre lang habe ich als Zeitsoldat in der Bundeswehr gedient,
-          zuletzt im Dinestgrad eines Hauptmanns. Als Offizier umfassten meine
+          zuletzt im Dienstgrad eines Hauptmanns. Als Offizier umfassten meine
           Aufgaben Bereiche wie Planung und Organisation von Ausbildungen und
           Übungen und die Unterstützung des Vorgesetzten bei der Führung und
           Erziehung der Soldaten. Ebenso war ich selbst für Führung von über 100

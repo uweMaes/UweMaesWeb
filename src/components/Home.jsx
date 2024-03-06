@@ -60,8 +60,7 @@ const Home = () => {
           Ihnen gefällt, was Sie sehen?
         </Heading>
         <Text fontSize="lg" mb={4}>
-          Laden Sie hier meine Bewerbung herunter und leiten Sie sie weiter an
-          Ihre Personalabteilung.
+          Dann können Sie hier meine Bewerbun herunterladen.
         </Text>
         <ChakraLink
           as="a"
