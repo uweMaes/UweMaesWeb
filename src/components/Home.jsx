@@ -60,7 +60,7 @@ const Home = () => {
           Ihnen gefällt, was Sie sehen?
         </Heading>
         <Text fontSize="lg" mb={4}>
-          Dann können Sie hier meine Bewerbun herunterladen.
+          Dann können Sie hier meine Bewerbung herunterladen.
         </Text>
         <ChakraLink
           as="a"

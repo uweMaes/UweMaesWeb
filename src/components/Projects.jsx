@@ -3,6 +3,7 @@ import { Box, Text, Button, VStack, Collapse } from "@chakra-ui/react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import KFZVerwaltung from "./projects/KFZVerwaltung";
 import ReactWebseiteProjekt from "./projects/ReactWebseiteProjekt";
+import ToDoListInfo from "./projects/ToDoListInfo";
 
 const projects = [
   {
@@ -17,7 +18,12 @@ const projects = [
     content: <ReactWebseiteProjekt />,
     isCustomComponent: true,
   },
-  { id: 2, name: "Projekt 2", content: "Inhalt von Projekt 2..." },
+  {
+    id: 2,
+    name: "To-Do Liste mit C#",
+    content: <ToDoListInfo />,
+    isCustomComponent: true,
+  },
 ];
 
 function Projects() {
